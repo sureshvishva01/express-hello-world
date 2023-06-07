@@ -8,7 +8,7 @@ const port = 3001;
 app.use(bodyParser.json());
 
 // Webhook endpoint
-app.post('/webhooks/shopify', (req, res) => {
+app.post('https://80c25a.myshopify.com/webhooks/shopify', (req, res) => {
   const { body } = req;
   console.log('Webhook event received:', body);
 
