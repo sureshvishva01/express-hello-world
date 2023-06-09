@@ -8,7 +8,7 @@ const port = 3001;
 app.use(bodyParser.json());
 
 // Webhook endpoint
-app.post('https://shopifyorder.onrender.com/', (req, res) => {
+app.post('https://80c25a.myshopify.com/admin/api/2023-04/webhooks.json', (req, res) => {
   const { body } = req;
   console.log('Webhook event received:', body);
 
@@ -22,5 +22,5 @@ app.post('https://shopifyorder.onrender.com/', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on https://shopifyorder.onrender.com/`);
 });
